@@ -54,7 +54,8 @@ class _LoginViewState extends State<LoginView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Login")),
-      body: Padding(
+      body: Center(
+        child: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Form(
           key: _formKey,
@@ -82,6 +83,7 @@ class _LoginViewState extends State<LoginView> {
           ),
         ),
       ),
+      )
     );
   }
 }
